@@ -1,0 +1,37 @@
+body {
+  min-height: 200vh;  /* Ensure the page is tall enough for scrolling */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#content {
+  display: block;
+  padding: 20px;
+}
+
+.video-container {
+  width: 100%;  /* Full width of the container */
+  max-width: 600px;  /* Limit the max width */
+  margin: 10px auto;  /* Center the video container */
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+  width: 100%;  /* Full width of the container */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+#loader {
+  display: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#loader.active {
+  display: block;
+}

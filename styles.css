@@ -1,0 +1,70 @@
+body {
+  min-height: 200vh;  /* Ensure the page is tall enough for scrolling */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#content {
+  display: block;
+  padding: 20px;
+}
+
+.video-container {
+  width: 100%;           /* Full width of the container */
+  max-width: 400px;      /* Reduced max width for a smaller video window */
+  margin: 10px auto;     /* Center the video container */
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the hyperlink container above each video */
+.link-container {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.video {
+  width: 100%;   /* Full width of the container */
+  height: auto;  /* Maintain aspect ratio */
+}
+
+/* Style for the like button container below the video */
+.like-container {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.like-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* Change appearance when the like button is toggled */
+.like-button.liked {
+  background-color: #f00;
+  color: #fff;
+}
+
+#loader {
+  display: none;
+  text-align: center;
+  margin: 20px;
+}
+
+#loader.active {
+  display: block;
+}

@@ -1,0 +1,74 @@
+/* Basic reset and typography */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container for the bio page */
+.bio-container {
+  display: flex;
+  flex-direction: row; /* Align items in a row */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+/* Picture container on the left */
+.bio-picture {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  overflow: hidden;
+  border-radius: 50%; /* Makes the container circular */
+}
+
+/* Crop the image into a circle */
+.bio-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Bio description on the right */
+.bio-description {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Bio info labels styled as badges */
+.bio-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.bio-sector,
+.bio-language {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.bio-sector {
+  background-color: #3498db; /* Blue tone for Sector */
+}
+
+.bio-language {
+  background-color: #2ecc71; /* Green tone for Language */
+}
+
+/* Style for the Book a meeting link */
+.book-meeting-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
